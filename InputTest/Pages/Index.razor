@@ -1,0 +1,10 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Forms
+
+<h1>@SomeString</h1>
+
+<InputText id="Test" @bind-Value="@SomeString" />
+
+@code {
+    public string SomeString { get; set; } = "Hello World";
+}
